@@ -96,14 +96,9 @@ QEMU_PROJECT_NAME="qemu"
 QEMU_VERSION="2.8"
 
 QEMU_SRC_FOLDER_NAME=${QEMU_SRC_FOLDER_NAME:-"${QEMU_PROJECT_NAME}.git"}
-QEMU_GIT_URL="https://github.com/xpack-dev-tools/qemu.git"
+QEMU_GIT_URL="https://github.com/Javier-varez/qemu"
 
-if [ "${IS_DEVELOP}" == "y" ]
-then
-  QEMU_GIT_BRANCH=${QEMU_GIT_BRANCH:-"xpack-develop"}
-else
-  QEMU_GIT_BRANCH=${QEMU_GIT_BRANCH:-"xpack"}
-fi
+QEMU_GIT_BRANCH=${QEMU_GIT_BRANCH:-"feature_support_stm32_bluepill"}
 
 QEMU_GIT_COMMIT=${QEMU_GIT_COMMIT:-""}
 
